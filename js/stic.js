@@ -8,6 +8,12 @@ function formatDate(dateString) {
     const year = date.getFullYear();
     return `${day}/${month}/${year}`;
 }
+  function formatTime(dateString) {
+    if (!dateString) return "Unknown Time";
+    const date = new Date(dateString);
+    if (isNaN(date.getTime())) return dateString; 
+    return date.toLocaleTimeString();
+  }
 
 //branch name
 document.addEventListener("DOMContentLoaded", () => {
