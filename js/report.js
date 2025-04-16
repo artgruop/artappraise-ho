@@ -104,11 +104,10 @@ function fetchData() {
                     `;
                 });
                 rowCountEl.textContent = `Total: ${userArray.length}`;
+                rowCount_1nEl.value = `${userArray.length}`;
             } else {
-                tblBodyEl.innerHTML = "<tr><td colspan='8'>⚠️ No Records Found</td></tr>";
-                
-                rowCountEl.textContent = "Total: 0";
-                rowCount_1nEl.value =  `${userArray}`;
+                tblBodyEl.innerHTML = "<tr><td colspan='8'>⚠️ No Records Found</td></tr>";                
+                rowCountEl.textContent = "Total: 0";               
             }
         });
   
