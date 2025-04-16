@@ -66,8 +66,8 @@ function printTable() {
     </div>
     <div class="info-table">       
         <p>Date:<span> ${formattedDate}</span></p>
-        <p>Branch:<span>${branchValue}</span></p>
-        <p>AppraisedBy:<span>${userName}</span></p>
+        <p>Branch:<span> ${branchValue}</span></p>
+        <p>AppraisedBy:<span> ${userName}</span></p>
         <p>Total Appraised:<span> ${rowCount}</span></p>
     </div> 
     <div class="maindata">

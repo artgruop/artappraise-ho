@@ -108,7 +108,7 @@ function fetchData() {
                 tblBodyEl.innerHTML = "<tr><td colspan='8'>⚠️ No Records Found</td></tr>";
                 
                 rowCountEl.textContent = "Total: 0";
-                rowCount_1nEl.value =  `${userArray.length}`;
+                rowCount_1nEl.value =  `${userArray}`;
             }
         });
   
