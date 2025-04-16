@@ -100,7 +100,7 @@ function printTable() {
             width: 100%;
             display: block;
             justify-content: space-between;
-            padding: 9px ;
+            padding: 8px ;
         }    
         .info-table p{
             font-size: 15px;
