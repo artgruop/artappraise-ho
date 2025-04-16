@@ -63,6 +63,7 @@ const appraisEl = document.querySelector("#Appraiser");
 const tblBodyEl = document.querySelector("#tableBody");
 const displayBtn = document.querySelector(".display");
 const rowCountEl = document.getElementById("rowCount");
+const rowCount_1nEl = document.getElementById("rowCount_in")
 
 function fetchData() {
     const branchValue = branchEL.value.trim();
@@ -105,7 +106,9 @@ function fetchData() {
                 rowCountEl.textContent = `Total: ${userArray.length}`;
             } else {
                 tblBodyEl.innerHTML = "<tr><td colspan='8'>⚠️ No Records Found</td></tr>";
+                
                 rowCountEl.textContent = "Total: 0";
+                rowCount_1nEl.value =  `${userArray.length}`;
             }
         });
   
